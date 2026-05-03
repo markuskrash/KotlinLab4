@@ -5,7 +5,7 @@
 - **service2** — отдаёт свои данные: `GET /api/service2`
 - **service1** — `GET /api/service1`: сам что-то добавляет и дергает service2 через discovery (не по IP, а по имени `service2`)
 - **gateway** — единая точка входа, порт **8888**, маршруты на service1 и service2
-- **tempo + prometheus + grafana** — чтобы было куда слать OTLP и где открыть трейсы (Prometheus нужен конфигу Tempo из примера Grafana)
+- **tempo + prometheus + grafana** — чтобы было куда слать OTLP и где открыть трейсы (конфиг Tempo взят из официального примера под remote write)
 
 
 ## Что нужно установить
